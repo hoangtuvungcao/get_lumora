@@ -44,7 +44,7 @@ Tất cả tệp nằm trong mục **[Releases](https://github.com/hoangtuvungca
 | **Windows** | Windows 10 / 11, 64-bit | `Lumora-…-windows-x86_64-setup.exe` (bản cài đặt) hoặc `…-portable.zip` (không cần cài) |
 | **macOS** | macOS 11 trở lên, Intel & Apple Silicon | `Lumora-…-macos-universal.dmg` |
 | **Linux** | x86_64, Ubuntu 24.04 / Debian 13 / Fedora 40 trở lên | `.deb` cho Ubuntu/Debian, `.AppImage` cho các bản khác, hoặc `.tar.gz` |
-| **Android** | Android 8.0 trở lên | `Lumora-…-android-arm64-v8a.apk` cho hầu hết điện thoại — không chắc thì chọn `…-android-universal.apk` |
+| **Android** | Android 8.0 trở lên | `Lumora-…-android-universal.apk` — **khuyên dùng**, cài được trên mọi máy. Bản nhẹ hơn: `…-arm64-v8a.apk` (máy 64-bit đời mới), `…-armeabi-v7a.apk` (máy 32-bit, đời cũ), `…-x86_64.apk` (chip Intel, giả lập) |
 
 ### Cài đặt
 
@@ -74,8 +74,8 @@ chmod +x Lumora-v1.0.0-linux-x86_64.AppImage && ./Lumora-v1.0.0-linux-x86_64.App
 <details>
 <summary><b>Android</b></summary>
 
-Tải tệp `.apk` về điện thoại và mở nó. Khi được hỏi, cho phép **Cài ứng dụng không rõ nguồn gốc**
-cho trình duyệt hoặc trình quản lý tệp.
+Tải tệp `…-android-universal.apk` về điện thoại và mở nó. Khi được hỏi, cho phép **Cài ứng dụng không rõ nguồn gốc**
+cho trình duyệt hoặc trình quản lý tệp. Nếu dùng bản nhẹ mà máy báo *“gói có vẻ không hợp lệ”*, hãy cài bản universal.
 </details>
 
 ### Quyền riêng tư
@@ -128,7 +128,7 @@ Every file is on the **[Releases](https://github.com/hoangtuvungcao/get_lumora/r
 | **Windows** | Windows 10 / 11, 64-bit | `Lumora-…-windows-x86_64-setup.exe` (installer) or `…-portable.zip` (no install) |
 | **macOS** | macOS 11 or later, Intel & Apple Silicon | `Lumora-…-macos-universal.dmg` |
 | **Linux** | x86_64, Ubuntu 24.04 / Debian 13 / Fedora 40 or later | `.deb` for Ubuntu/Debian, `.AppImage` for other distributions, or `.tar.gz` |
-| **Android** | Android 8.0 or later | `Lumora-…-android-arm64-v8a.apk` for most phones — if unsure, `…-android-universal.apk` |
+| **Android** | Android 8.0 or later | `Lumora-…-android-universal.apk` — **recommended**, installs on every device. Lighter builds: `…-arm64-v8a.apk` (recent 64-bit phones), `…-armeabi-v7a.apk` (older 32-bit phones), `…-x86_64.apk` (Intel chips, emulators) |
 
 ### Installation
 
@@ -158,8 +158,8 @@ chmod +x Lumora-v1.0.0-linux-x86_64.AppImage && ./Lumora-v1.0.0-linux-x86_64.App
 <details>
 <summary><b>Android</b></summary>
 
-Download the `.apk` to your phone and open it. When asked, allow **Install unknown apps**
-for your browser or file manager.
+Download `…-android-universal.apk` to your phone and open it. When asked, allow **Install unknown apps**
+for your browser or file manager. If a lighter build says *“package appears to be invalid”*, install the universal one.
 </details>
 
 ### Privacy
