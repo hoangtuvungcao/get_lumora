@@ -1,0 +1,15 @@
+{
+  "name": "Lumora",
+  "site": "https://getlumora.pages.dev",
+  "sourceRepository": "https://github.com/hoangtuvungcao/lumora",
+  "websiteRepository": "https://github.com/hoangtuvungcao/get_lumora",
+  "releases": "https://github.com/hoangtuvungcao/get_lumora/releases",
+  "applicationTag": "v1.0.10",
+  "applicationReleaseAssetCount": 18,
+  "applicationLicense": "LicenseRef-Lumora-Proprietary",
+  "botSdkLicense": "MIT",
+  "issues": "https://github.com/hoangtuvungcao/get_lumora/issues",
+  "discussions": "https://github.com/hoangtuvungcao/get_lumora/discussions",
+  "websiteVersion": "2026.11.27",
+  "sourceAvailability": "Access can be temporarily restricted during release maintenance. Source visibility does not grant an open-source license."
+}

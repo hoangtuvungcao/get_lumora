@@ -1,0 +1,246 @@
+{
+  "cs.s3.p2": ["Chúng tôi hợp tác với cơ quan có thẩm quyền trong phạm vi thông tin thực có. Không thể đọc nội dung đã mã hoá không đồng nghĩa không có metadata hoặc bản mã được giữ trên hạ tầng bên ngoài.", "We cooperate with competent authorities within the information actually held. Inability to read encrypted content does not mean no metadata or ciphertext is retained on external infrastructure."],
+  "da.lead": ["Xoá dữ liệu tài khoản trong ứng dụng và kiểm tra các thiết bị đã liên kết. Bản người nhận giữ, bản sao lưu, tệp xuất và bản mã trên hạ tầng khác có giới hạn xoá riêng.", "Delete account data in the app and check linked devices. Recipient copies, backups, exports and ciphertext on other infrastructure have separate deletion limits."],
+  "da.s2.p1": ["Xoá cục bộ không bảo đảm xoá mọi bản sao. Người nhận có thể lưu tin nhắn, tệp hoặc ảnh chụp; relay/Nostr có thể giữ bản mã và metadata. Kiểm tra thiết bị liên kết, tệp tải, sao lưu và cụm khôi phục; thiết bị ngoại tuyến có thể cập nhật muộn.", "Local deletion cannot guarantee removal of every copy. Recipients may save messages, files or screenshots; relays/Nostr may retain ciphertext and metadata. Check linked devices, downloads, backups and recovery phrases; offline devices can update later."],
+  "da.sum2": ["Kiểm tra và xoá dữ liệu trên các thiết bị đã liên kết; thiết bị ngoại tuyến có thể cập nhật muộn.", "Check and remove data on linked devices; offline devices can update later."],
+  "da.sum3": ["Xoá cục bộ không xoá chắc chắn bản người nhận, tệp xuất, sao lưu hay mọi bản mã trên hạ tầng khác.", "Local deletion does not guarantee removal of recipient copies, exports, backups or all ciphertext on other infrastructure."],
+  "community.alt.community": ["Cộng đồng Lumora với các kênh chữ và phòng thoại", "Lumora community screen with text channels and voice rooms"],
+  "community.alt.call": ["Màn hình cuộc gọi video trong ứng dụng Lumora", "Video call screen in the Lumora application"],
+  "community.alt.remote": ["Màn hình kết nối hỗ trợ máy tính từ xa của Lumora", "Lumora remote computer assistance connection screen"],
+  "hero.badge": [
+    "Bản hiện tại miễn phí · Không quảng cáo",
+    "Current version is free · No ads"
+  ],
+  "strip.1": [
+    "Bản hiện tại miễn phí",
+    "Current version is free"
+  ],
+  "cta.badge": [
+    "Bản hiện tại miễn phí",
+    "Current version is free"
+  ],
+  "pr1.t": [
+    "Mã hoá nội dung khi truyền",
+    "Content encrypted in transit"
+  ],
+  "pr1.d": [
+    "Tin nhắn 1–1 dùng Double Ratchet; cuộc gọi/tệp dùng đường truyền mã hoá. Người nhận, thành viên nhóm và bot đọc được nội dung gửi cho họ.",
+    "One-to-one messages use Double Ratchet; calls/files use encrypted transport. Recipients, group members and bots can read content sent to them."
+  ],
+  "pr3.t": [
+    "Cơ sở dữ liệu cục bộ có mã hoá",
+    "Encrypted local database"
+  ],
+  "pr3.d": [
+    "SQLCipher bảo vệ lịch sử và danh bạ. Tệp tải/xuất ra là tệp thông thường; bản mã ngoại tuyến có thể được giữ để chuyển tiếp.",
+    "SQLCipher protects history and contacts. Downloads/exports are normal files; offline ciphertext may be retained for delivery."
+  ],
+  "t1.t": [
+    "Danh tính tạo trên thiết bị",
+    "Identity created on your device"
+  ],
+  "t1.d": [
+    "Không cần số điện thoại/email. Danh bạ công khai và dịch vụ kết nối vẫn có thể xử lý hồ sơ công khai và metadata.",
+    "No phone number/email is required. Public directories and connection services can still process public profiles and metadata."
+  ],
+  "t2.t": [
+    "Bản mã có thể được giữ để chuyển tiếp",
+    "Ciphertext can be retained for delivery"
+  ],
+  "t2.d": [
+    "Lịch sử chính nằm trên thiết bị. Bạn bè, relay hoặc Nostr có thể giữ thư ngoại tuyến đã mã hoá; không cam kết không lưu trên máy chủ.",
+    "Primary history lives on devices. Friends, relays or Nostr can retain encrypted offline mail; this is not a no-server-storage promise."
+  ],
+  "t4.d": [
+    "SDK bot Python/JavaScript theo MIT. Ứng dụng/lõi có giấy phép riêng; công khai mã không đồng nghĩa mã nguồn mở.",
+    "The Python/JavaScript Bot SDK is MIT. The app/core are proprietary; source visibility does not make them open source."
+  ],
+  "n4.d": [
+    "Ảnh, tin nhắn thoại và tệp đến 8 MB có thể dùng thư mã hoá khi chưa có kết nối trực tiếp. Cuộc gọi có thể qua thiết bị tình nguyện khi có đường chuyển tiếp; metadata từng chặng vẫn có thể lộ.",
+    "Photos, voice messages and files up to 8 MB can use sealed mail without a direct connection. Calls can use volunteer circuits when available; per-hop metadata can still be visible."
+  ],
+  "a1": [
+    "Bản hiện tại miễn phí, không quảng cáo, không cần thẻ thanh toán. Đây không phải cam kết giá/tính năng giữ nguyên mãi mãi; xem giấy phép và ghi chú phát hành.",
+    "The current release is free to use, without ads or a payment card. This is not a promise that pricing/features will never change; see the license and release notes."
+  ],
+  "a3": [
+    "Nội dung được mã hoá khi truyền. Người nhận, thành viên nhóm và bot đọc được nội dung gửi cho họ. Mã hoá không che mọi metadata hay bảo vệ thiết bị đã bị xâm nhập.",
+    "Content is encrypted in transit. Recipients, group members and bots can read content sent to them. Encryption does not hide all metadata or protect compromised devices."
+  ],
+  "a8": [
+    "Lịch sử chính ở cơ sở dữ liệu mã hoá trên thiết bị. Bạn bè, relay hoặc Nostr có thể giữ bản mã thư ngoại tuyến và thấy metadata; đây không phải không lưu trên máy chủ.",
+    "Primary history is in encrypted device databases. Friends, relays or Nostr can retain offline-mail ciphertext and see metadata; this is not no-server storage."
+  ],
+  "a10": [
+    "Mở Cài đặt › Bảo mật › Xoá tài khoản và làm theo trang hướng dẫn. Xoá cục bộ không bảo đảm xoá bản người nhận lưu, tệp đã xuất hay mọi bản mã đã chuyển tới hạ tầng khác.",
+    "Open Settings › Security › Delete account and follow the guide. Local deletion cannot guarantee removal of recipient copies, exports or all ciphertext sent to other infrastructure."
+  ],
+  "footer.license": [
+    "Ứng dụng và lõi: giấy phép riêng · SDK bot: MIT.",
+    "App and core: proprietary license · Bot SDK: MIT."
+  ],
+  "nav.community": [
+    "Cộng đồng",
+    "Community"
+  ],
+  "footer.source": [
+    "Mã ứng dụng/lõi (giấy phép riêng)",
+    "App/core source (proprietary)"
+  ],
+  "footer.website": [
+    "Mã website và bản tải",
+    "Website source and downloads"
+  ],
+  "pv.lead": [
+    "Ứng dụng lưu gì, gửi gì, ai có thể thấy dữ liệu và cách bạn kiểm soát.",
+    "What the app stores/sends, who can see it, and your controls."
+  ],
+  "pv.sum2": [
+    "Nội dung được mã hoá; thiết bị nhận và bot vẫn đọc được nội dung gửi cho họ.",
+    "Content is encrypted; recipients and bots can read content sent to them."
+  ],
+  "pv.sum3": [
+    "Cơ sở dữ liệu dùng SQLCipher; tệp tải về không được bao phủ.",
+    "The database uses SQLCipher; downloads are not covered."
+  ],
+  "pv.sum4": [
+    "Bên kết nối trực tiếp và dịch vụ hạ tầng có thể thấy IP.",
+    "Direct peers and infrastructure can see IP addresses."
+  ],
+  "pv.s2.p1": [
+    "Tin nhắn 1–1 dùng Double Ratchet; nhóm dùng khoá nhóm luân phiên, không phải MLS đầy đủ. Cuộc gọi/tệp dùng kết nối mã hoá; thư ngoại tuyến niêm phong cho người nhận. Người nhận, thành viên nhóm và bot đọc được nội dung gửi cho họ. Thiết bị đang chạy bị xâm nhập có thể làm lộ dữ liệu nó đọc được.",
+    "One-to-one messages use Double Ratchet; groups use rotating keys, not full MLS. Calls/files use encrypted connections; offline mail is sealed to recipients. Recipients, group members and bots can read content sent to them. A compromised running device can expose what it can read."
+  ],
+  "pv.s3.p1": [
+    "Lịch sử và danh bạ ở cơ sở dữ liệu cục bộ được SQLCipher mã hoá. Bạn bè, relay hoặc Nostr có thể giữ bản mã thư ngoại tuyến để chuyển tiếp. Thời gian giữ bản mã/metadata phụ thuộc hạ tầng; không bảo đảm xoá tức thì mọi bản sao.",
+    "History and contacts are in a local SQLCipher-encrypted database. Friends, relays or Nostr can retain offline-mail ciphertext for delivery. Retention of ciphertext/metadata depends on infrastructure; immediate erasure of all copies is not guaranteed."
+  ],
+  "pv.s3.p2": [
+    "Ảnh, video và tệp nhận, tải về hoặc xuất ra là tệp thông thường, không mã hoá bởi SQLCipher. Trên máy tính chúng thường ở Downloads/Lumora hoặc thư mục bạn chọn. Bản lưu ngoài dữ liệu ứng dụng có thể còn sau gỡ ứng dụng; hãy xoá bản không cần và sao lưu tệp muốn giữ.",
+    "Received, downloaded or exported photos, videos and files are normal, unencrypted files outside SQLCipher protection. On computers they are commonly in Downloads/Lumora or a chosen folder. Copies outside app data can survive uninstalling; remove unwanted copies and back up files you want to keep."
+  ],
+  "pv.s4.p1": [
+    "Các bên kết nối trực tiếp thấy IP của nhau. IP có thể cho biết nhà mạng/khu vực và kết hợp với dữ liệu khác để nhận diện; Lumora không phải dịch vụ ẩn danh IP. Các bên có thể thấy gồm:",
+    "Direct peers see each other's IPs. IPs can reveal a provider/area and be combined with other data for identification; Lumora is not an IP-anonymity service. Parties that can see addresses include:"
+  ],
+  "pv.s4.p3": [
+    "Ứng dụng hạn chế tiết lộ địa chỉ trực tiếp cho người lạ qua tín hiệu niêm phong và kiểm tra quyền kết nối. Điều này không che IP khỏi mọi dịch vụ, ngăn mọi suy luận từ metadata hoặc bảo vệ thiết bị bị xâm nhập.",
+    "The app limits direct address disclosure to strangers through sealed signaling and connection authorization. This does not hide IPs from all services, prevent all metadata inference or protect compromised devices."
+  ],
+  "pv.s4.p4": [
+    "Khi bật “Cho người lạ tìm thấy tôi bằng ID”, relay Nostr nhận đăng ký hộp thư công khai có thể liên kết ID với IP. Relay Lumora được cấu hình luôn thấy danh tính/khoá kết nối và IP. Tắt tìm theo ID hạn chế liên kết này nhưng không bảo đảm ẩn danh.",
+    "With “Let strangers find me by ID” enabled, Nostr relays handling public-inbox subscriptions can link ID to IP. Configured Lumora relays always see connecting identity/key and IP. Disabling ID discovery limits this linkage but does not guarantee anonymity."
+  ],
+  "pv.s5.p1": [
+    "Lumora ưu tiên P2P nhưng dùng hạ tầng tìm kiếm, tín hiệu, relay và thư ngoại tuyến. Các bên đó có thể xử lý IP, thời điểm, khoá/danh tính, metadata và bản mã giữ để chuyển tiếp. Mã hoá nội dung không thay thế việc đánh giá bên vận hành và thời gian lưu.",
+    "Lumora prefers P2P but uses discovery, signaling, relay and offline-mail infrastructure. Those parties can process IPs, timing, keys/identities, metadata and retained ciphertext. Content encryption does not replace assessing operators and retention."
+  ],
+  "pv.s5.p2.i1": [
+    "Relay Nostr công cộng chuyển tín hiệu/thư niêm phong, hỗ trợ tìm theo ID/tên. Khi hộp thư người lạ bật, relay liên quan có thể liên kết ID–IP; sự kiện/bản mã có thể được lưu theo cách relay vận hành.",
+    "Public Nostr relays carry sealed signaling/mail and support ID/name discovery. With a public stranger inbox enabled, relevant relays can link ID and IP; events/ciphertext can be retained according to relay operation."
+  ],
+  "pv.s5.p3": [
+    "Danh bạ công khai, DHT và UPnP ở Cài đặt › Nâng cao › Mạng; tìm theo ID ở Cài đặt › Quyền riêng tư. Thay đổi có thể ảnh hưởng kết nối. Bạn bè trực tiếp và dịch vụ còn dùng vẫn thấy thông tin mạng cần thiết.",
+    "Public-directory, DHT and UPnP options are in Settings › Advanced › Network; ID discovery is in Settings › Privacy. Changes can affect connectivity. Direct peers and services still in use see necessary network information."
+  ],
+  "community.eyebrow": [
+    "TẢI VỀ · TÀI LIỆU · CỘNG ĐỒNG",
+    "DOWNLOADS · DOCUMENTATION · COMMUNITY"
+  ],
+  "community.title": [
+    "Cùng xây dựng Lumora tốt hơn",
+    "Help improve Lumora"
+  ],
+  "community.lead": [
+    "Tải ứng dụng, đọc tài liệu, xem mã nguồn và trao đổi đúng nơi.",
+    "The right places for downloads, documentation, source and community."
+  ],
+  "community.release.title": [
+    "Bản ứng dụng hiện có",
+    "Existing application release"
+  ],
+  "community.release.body": [
+    "v1.0.10 · 18 tệp · 09/11/2026. Cập nhật website không dựng lại, thay thế hay kiểm thử mới các tệp ứng dụng.",
+    "v1.0.10 · 18 assets · 9 November 2026. This website update does not rebuild, replace or newly test application binaries."
+  ],
+  "community.release.link": [
+    "Mở bản phát hành v1.0.10",
+    "Open release v1.0.10"
+  ],
+  "community.docs.title": [
+    "Hướng dẫn và SDK bot",
+    "Guides and Bot SDK"
+  ],
+  "community.docs.body": [
+    "Bắt đầu nhanh, ví dụ và API. SDK Python/JavaScript có giấy phép MIT riêng; MIT không áp dụng cho ứng dụng/lõi.",
+    "Quickstart, examples and API. The Python/JavaScript SDK has its own MIT license; MIT does not cover the app/core."
+  ],
+  "community.docs.link": [
+    "Đọc tài liệu",
+    "Read documentation"
+  ],
+  "community.source.title": [
+    "Mã nguồn và giấy phép",
+    "Source and licensing"
+  ],
+  "community.source.body": [
+    "Ứng dụng/lõi có giấy phép riêng dù mã được công khai để tham khảo; đây không phải giấy phép mã nguồn mở. Kho nguồn có thể tạm hạn chế khi bảo trì phát hành. Tải ứng dụng vẫn ở kho get_lumora công khai.",
+    "The app/core remain proprietary even when source is visible for reference; this is not an open-source license. Source access can be restricted during release maintenance. Downloads stay in the public get_lumora repository."
+  ],
+  "community.source.link": [
+    "Mã ứng dụng/lõi",
+    "App/core source"
+  ],
+  "community.website.link": [
+    "Mã website",
+    "Website source"
+  ],
+  "community.feedback.title": [
+    "Thảo luận và báo lỗi",
+    "Discussions and bug reports"
+  ],
+  "community.feedback.body": [
+    "Nêu phiên bản, hệ điều hành và bước tái hiện. Không đăng khoá, token, cụm khôi phục, địa chỉ riêng hoặc log nhạy cảm chưa che.",
+    "Include version, OS and reproduction steps. Never post keys, tokens, recovery phrases, private addresses or unredacted sensitive logs."
+  ],
+  "community.discussions.link": [
+    "Tham gia Discussions",
+    "Join Discussions"
+  ],
+  "community.issues.link": [
+    "Báo lỗi qua Issues",
+    "Report through Issues"
+  ],
+  "community.limits.title": [
+    "Hiểu đúng phạm vi riêng tư",
+    "Understand the privacy boundaries"
+  ],
+  "community.limits.body": [
+    "Mã hoá không che mọi metadata. SQLCipher bảo vệ cơ sở dữ liệu, không phải tệp tải về. Bạn bè/relay/Nostr có thể giữ thư ngoại tuyến đã mã hoá; một số bên có thể thấy IP hoặc liên kết ID–IP.",
+    "Encryption does not hide all metadata. SQLCipher protects the database, not downloads. Friends/relays/Nostr can retain encrypted offline mail; some parties can see IPs or ID–IP linkage."
+  ],
+  "community.privacy.link": [
+    "Chính sách và giới hạn",
+    "Policy and limits"
+  ],
+  "community.images.title": [
+    "Một vài màn hình ứng dụng",
+    "A few application screens"
+  ],
+  "community.images.body": [
+    "Dùng lại ảnh đã công bố trong tài liệu dự án. Giao diện có thể khác theo phiên bản/nền tảng.",
+    "Reused images already published in project documentation. UI can vary by release/platform."
+  ],
+  "community.image.community": [
+    "Cộng đồng và phòng thoại",
+    "Communities and voice rooms"
+  ],
+  "community.image.call": [
+    "Gọi video",
+    "Video calling"
+  ],
+  "community.image.remote": [
+    "Trợ giúp từ xa",
+    "Remote help"
+  ]
+}

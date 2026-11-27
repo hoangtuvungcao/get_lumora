@@ -1,0 +1,134 @@
+{
+  "assets": [
+    {
+      "digest": "sha256:cb0f98f67d088b1bd7050384d15154938c6c546a1bc7c5af301907d9037f1112",
+      "id": 726127507,
+      "name": "LICENSE.md",
+      "size": 31779,
+      "updated_at": "2026-11-09T03:48:40Z"
+    },
+    {
+      "digest": "sha256:7ee19d9a2ffe092c93fbcd7cbc140c95f5304ea7dab8e32f90f79623172f980d",
+      "id": 726127508,
+      "name": "Lumora-bot-runner-v1.0.10-linux-x86_64",
+      "size": 31691280,
+      "updated_at": "2026-11-09T03:48:43Z"
+    },
+    {
+      "digest": "sha256:3761da670bbe69c62f95f82fe75bce593be8bdc9d0eceb7896b7a421c34a6901",
+      "id": 726127510,
+      "name": "Lumora-bot-runner-v1.0.10-macos-universal",
+      "size": 54650688,
+      "updated_at": "2026-11-09T03:48:44Z"
+    },
+    {
+      "digest": "sha256:331031d49f156dfa9bfa56b39dd49615e3753d1e41d7b74c91b27a6bedcc308a",
+      "id": 726127506,
+      "name": "Lumora-bot-runner-v1.0.10-windows-x86_64.exe",
+      "size": 34064384,
+      "updated_at": "2026-11-09T03:48:43Z"
+    },
+    {
+      "digest": "sha256:df8836c19979c6d72e3ba6c8f4614ccc3bec00d7f8fe17e034ceccb47062285f",
+      "id": 726127509,
+      "name": "Lumora-v1.0.10-android-arm64-v8a.apk",
+      "size": 83874467,
+      "updated_at": "2026-11-09T03:48:53Z"
+    },
+    {
+      "digest": "sha256:4cfda1ba48da90bc2e112fd75ecd7f417dba3d58f5eeee6ca7543cb820633a27",
+      "id": 726127540,
+      "name": "Lumora-v1.0.10-android-armeabi-v7a.apk",
+      "size": 72633623,
+      "updated_at": "2026-11-09T03:48:44Z"
+    },
+    {
+      "digest": "sha256:c5b2c779b907467b89ccf514b8bbb6c876ab1a54466097e5a120925076444b69",
+      "id": 726127642,
+      "name": "Lumora-v1.0.10-android-universal.apk",
+      "size": 198301555,
+      "updated_at": "2026-11-09T03:48:51Z"
+    },
+    {
+      "digest": "sha256:6049f4216284d42f1a736142d9df32e5b76dc2cc8e0d78fd2b05057a16b0e47a",
+      "id": 726127673,
+      "name": "Lumora-v1.0.10-android-x86_64.apk",
+      "size": 90493595,
+      "updated_at": "2026-11-09T03:48:47Z"
+    },
+    {
+      "digest": "sha256:0190bc4335cee8bdc3b198ab278b94b0ee11f05eb94fb37dcaf6b496df16bd09",
+      "id": 726127676,
+      "name": "Lumora-v1.0.10-ios-unsigned.ipa",
+      "size": 48670418,
+      "updated_at": "2026-11-09T03:48:46Z"
+    },
+    {
+      "digest": "sha256:bc949d3be3884e21ca03d2bdbf15cb6773a55ccd74a48c6ced6cb8c013dd6414",
+      "id": 726127701,
+      "name": "Lumora-v1.0.10-linux-amd64.deb",
+      "size": 49101048,
+      "updated_at": "2026-11-09T03:48:47Z"
+    },
+    {
+      "digest": "sha256:579f405c256a87e5fb29ec73a3fabdfa1f4ec8722e8a61bbc140fbd16925708f",
+      "id": 726127922,
+      "name": "Lumora-v1.0.10-linux-x86_64.AppImage",
+      "size": 58001912,
+      "updated_at": "2026-11-09T03:48:49Z"
+    },
+    {
+      "digest": "sha256:6ea2d8d4b1e4fd29ed0dbb32e9d4c51632d8044d5db9b7ffeb2edc6998f9fd83",
+      "id": 726127955,
+      "name": "Lumora-v1.0.10-linux-x86_64.tar.gz",
+      "size": 60849742,
+      "updated_at": "2026-11-09T03:48:50Z"
+    },
+    {
+      "digest": "sha256:9e281bc4c990f088dbea17e23d17bdbc3b87c353bba5cfe1e0649adc8a91edb8",
+      "id": 726127976,
+      "name": "Lumora-v1.0.10-macos-universal.dmg",
+      "size": 85000210,
+      "updated_at": "2026-11-09T03:48:52Z"
+    },
+    {
+      "digest": "sha256:d0f711b84e610407f31d4d267ac48032e5e122a1ad6b97db8857b17d019f3d6f",
+      "id": 726128035,
+      "name": "Lumora-v1.0.10-windows-x86_64-portable.zip",
+      "size": 57233483,
+      "updated_at": "2026-11-09T03:48:52Z"
+    },
+    {
+      "digest": "sha256:2f40fbc7f56109a7aff3dc98f8b93d2d1e3a0db83fb5e09bcb3680b9f45ef47c",
+      "id": 726128055,
+      "name": "Lumora-v1.0.10-windows-x86_64-setup.exe",
+      "size": 52325318,
+      "updated_at": "2026-11-09T03:48:53Z"
+    },
+    {
+      "digest": "sha256:12c117165dd107f1390db7b86e4933d7f8c8e8f51cead2f9f2419f534471d719",
+      "id": 726128081,
+      "name": "SHA256SUMS",
+      "size": 1616,
+      "updated_at": "2026-11-09T03:48:52Z"
+    },
+    {
+      "digest": "sha256:1c8c446eb3be7117caeb5eb0bbf3b1d52106cc63debe38237ea036dee224c498",
+      "id": 726128099,
+      "name": "SHA256SUMS.sigstore.json",
+      "size": 10307,
+      "updated_at": "2026-11-09T03:48:52Z"
+    },
+    {
+      "digest": "sha256:0034b46e95667b24e1d84072b9fe11ea4ce3c529384f139471b40ff1e6495b34",
+      "id": 726128102,
+      "name": "THIRD_PARTY_NOTICES.md",
+      "size": 395681,
+      "updated_at": "2026-11-09T03:48:53Z"
+    }
+  ],
+  "id": 438723074,
+  "published_at": "2026-11-09T04:19:53Z",
+  "tag_name": "v1.0.10",
+  "target_commitish": "main"
+}

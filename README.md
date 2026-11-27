@@ -7,12 +7,14 @@
 [![Phiên bản mới nhất · Latest release](https://img.shields.io/github/v/release/hoangtuvungcao/get_lumora?label=release&color=4f7cff)](https://github.com/hoangtuvungcao/get_lumora/releases/latest)
 [![Lượt tải · Downloads](https://img.shields.io/github/downloads/hoangtuvungcao/get_lumora/total?label=downloads&color=12b5cb)](https://github.com/hoangtuvungcao/get_lumora/releases)
 ![Nền tảng · Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Android%20%7C%20iOS-6b5cff)
-![Mã hoá · Encryption](https://img.shields.io/badge/end--to--end-encrypted-2ea44f)
+![Giấy phép ứng dụng · App license](https://img.shields.io/badge/app%20%26%20core-proprietary-6b5cff)
 ![Giá · Price](https://img.shields.io/badge/price-free-2ea44f)
 
 **[Trang chủ · Website](https://getlumora.pages.dev)** &nbsp;•&nbsp;
 **[Tải về · Download](https://github.com/hoangtuvungcao/get_lumora/releases/latest)** &nbsp;•&nbsp;
 **[Nhà phát triển · Developers](https://getlumora.pages.dev/developers/)** &nbsp;•&nbsp;
+**[Mã ứng dụng/lõi · App/core source](https://github.com/hoangtuvungcao/lumora)** &nbsp;•&nbsp;
+**[Cộng đồng · Community](https://getlumora.pages.dev/community/)** &nbsp;•&nbsp;
 **[Tiếng Việt](#tiếng-việt)** &nbsp;•&nbsp;
 **[English](#english)**
 
@@ -29,8 +31,9 @@
 ## Tiếng Việt
 
 **Lumora** là ứng dụng nhắn tin, gọi thoại và video, gửi tệp, cộng đồng và hỗ trợ máy tính từ xa — tất cả trong một.
-Các thiết bị **kết nối trực tiếp với nhau**, không đi qua máy chủ trung tâm: không cần số điện thoại hay email,
-không quảng cáo, **miễn phí hoàn toàn**. Chỉ bạn và người nhận đọc được tin nhắn.
+Ứng dụng ưu tiên **kết nối P2P**, có thể dùng relay và thư ngoại tuyến đã mã hoá.
+Không cần số điện thoại/email; bản hiện tại miễn phí và không quảng cáo. Mã hoá không che mọi metadata:
+xem [chính sách và giới hạn](https://getlumora.pages.dev/privacy/).
 
 - [Tính năng](#tính-năng)
 - [Tải về](#tải-về)
@@ -56,7 +59,7 @@ không quảng cáo, **miễn phí hoàn toàn**. Chỉ bạn và người nhậ
 | **Nhiều thiết bị** | Một tài khoản trên điện thoại, máy tính bảng và máy tính; lịch sử, cài đặt, nhãn dán được đồng bộ |
 | **Bot** | Tạo bot trong **Xưởng Bot**, chạy bằng Python hoặc JavaScript, thêm vào nhóm |
 | **Mạng khó** | Ảnh và tệp nhỏ vẫn tới khi hai máy không nối thẳng được (mạng 4G, NAT khó); cuộc gọi đi qua mạch hai chặng do người dùng tình nguyện chuyển tiếp — mỗi bên chỉ thấy một đầu |
-| **Bảo mật** | Mã hoá đầu cuối (Double Ratchet), dữ liệu trên máy được mã hoá, khoá ứng dụng bằng PIN, khôi phục bằng cụm 24 từ, bạn bè giúp lấy lại lịch sử |
+| **Bảo mật** | Double Ratchet cho tin nhắn 1–1, cơ sở dữ liệu SQLCipher, khoá PIN, khôi phục bằng cụm 24 từ; tệp tải/xuất nằm ngoài mã hoá cơ sở dữ liệu |
 
 <div align="center">
 <img src=".github/screenshots/remote.png" alt="Truy cập từ xa · Remote access" width="70%">
@@ -65,7 +68,7 @@ không quảng cáo, **miễn phí hoàn toàn**. Chỉ bạn và người nhậ
 ### Tải về
 
 Mọi tệp nằm trong mục **[Releases](https://github.com/hoangtuvungcao/get_lumora/releases/latest)**
-(`…` là số phiên bản, ví dụ `v1.0.9`).
+(`…` là số phiên bản, ví dụ `v1.0.10`).
 
 | Thiết bị | Yêu cầu | Tệp nên tải |
 |---|---|---|
@@ -76,7 +79,8 @@ Mọi tệp nằm trong mục **[Releases](https://github.com/hoangtuvungcao/get
 | **iPhone / iPad** | iOS 14 trở lên | `Lumora-…-ios-unsigned.ipa` — cài thủ công (xem bên dưới) |
 | **Chạy bot** | Windows / macOS / Linux | `Lumora-bot-runner-…` (xem [Dành cho nhà phát triển bot](#dành-cho-nhà-phát-triển-bot)) |
 
-Cập nhật: tải bản mới và cài đè lên bản cũ. **Dữ liệu được giữ nguyên.**
+Bản hiện có: **v1.0.10**, phát hành **09/11/2026**, **18 tệp**. Cập nhật website không dựng lại ứng dụng.
+Trước khi cập nhật ứng dụng, hãy sao lưu dữ liệu, kiểm tra chữ ký/ghi chú; không gỡ ứng dụng khi chưa sao lưu.
 
 ### Cài đặt
 
@@ -134,23 +138,26 @@ Hướng dẫn đầy đủ: [getlumora.pages.dev](https://getlumora.pages.dev).
 
 ### Lumora hoạt động thế nào
 
-Lumora là mạng **ngang hàng (P2P)**: tin nhắn, cuộc gọi và tệp đi thẳng giữa các thiết bị, mã hoá đầu cuối.
+Lumora ưu tiên mạng **ngang hàng (P2P)**, với kết nối nội dung mã hoá, relay và thư ngoại tuyến khi cần.
 Lumora tìm đường theo thứ tự:
 
 1. **Cùng mạng nội bộ** (Wi-Fi nhà, văn phòng) — nhanh nhất.
 2. **Nối thẳng qua Internet** — IPv6 hoặc đục lỗ NAT trên IPv4.
 3. **Bạn bè chung làm cầu nối** khi hai máy không nối thẳng được ("Giúp bạn bè kết nối").
 4. **Mạch hai chặng qua người tình nguyện** ("Giúp mạng Lumora", bật sẵn trên máy tính): dữ liệu đã mã hoá đi qua hai thiết bị,
-   mỗi thiết bị chỉ thấy một đầu, không biết ai nói chuyện với ai.
+   giới hạn thông tin mỗi chặng thấy nhưng không bảo đảm ẩn danh trước metadata, thông đồng hoặc thiết bị bị xâm nhập.
 5. **Hộp thư mã hoá** khi không có đường nào: tin nhắn, ảnh và tệp đến 8 MB vẫn tới, chậm hơn một chút.
 
-Không có máy chủ nào của Lumora giữ tin nhắn hay danh bạ của bạn.
+Lịch sử chính nằm trên thiết bị. Bạn bè, relay và Nostr có thể giữ bản mã thư ngoại tuyến;
+đây không phải cam kết không lưu trên máy chủ. Relay thấy metadata; một số relay Nostr có thể
+liên kết ID–IP khi bật tìm theo ID.
 
 ### Quyền riêng tư và bảo mật
 
 - Không tài khoản trên máy chủ, không số điện thoại, không email.
-- Tin nhắn, cuộc gọi và tệp được mã hoá đầu cuối; dữ liệu trên máy cũng được mã hoá.
-- **Người lạ không biết địa chỉ mạng (IP) của bạn** — chỉ bạn bè và thiết bị của chính bạn mới được nối thẳng.
+- Tin nhắn 1–1 dùng Double Ratchet; nhóm dùng khoá nhóm luân phiên. Người nhận và bot đọc được nội dung gửi cho họ.
+- SQLCipher bảo vệ lịch sử/danh bạ; ảnh, video và tệp tải/xuất ra là tệp thông thường ngoài SQLCipher.
+- Bên kết nối trực tiếp, bot, các bên liên quan trong nhóm và hạ tầng có thể thấy IP. Relay được cấu hình thấy danh tính và IP; không cam kết ẩn danh IP hoàn toàn.
 - Bạn chọn ai được gọi cho bạn, ai được thêm bạn vào nhóm, ai thấy bạn đang trực tuyến.
 - Không quảng cáo, không thu thập dữ liệu để bán.
 
@@ -184,7 +191,7 @@ thông báo toàn màn hình, tự khởi chạy).
 <details>
 <summary><b>Không nhận được tin khi đã tắt ứng dụng?</b></summary>
 
-Lumora không có máy chủ đẩy thông báo nên cần được chạy nền. Cho phép **Không giới hạn pin** và **Tự khởi chạy**
+Thông báo khi đóng ứng dụng phụ thuộc nền tảng, quyền chạy nền và cấu hình push. Cho phép **Không giới hạn pin** và **Tự khởi chạy**
 (máy Xiaomi, OPPO, vivo, Huawei…) trong tờ hướng dẫn của ứng dụng.
 </details>
 
@@ -244,8 +251,9 @@ màn hình nếu có. Liên hệ: **trong20843@gmail.com**.
 ## English
 
 **Lumora** brings chat, voice and video calls, file sharing, communities and remote help together in one app.
-Devices **connect directly to each other**, with no central server: no phone number or email, no ads,
-**free forever**. Only you and the people you talk to can read your messages.
+The app prefers **P2P connections** and can use relays and sealed offline mail.
+No phone number/email is required; the current release is free to use and has no ads.
+Encryption does not hide all metadata: see the [policy and limits](https://getlumora.pages.dev/privacy/).
 
 - [Features](#features)
 - [Download](#download)
@@ -271,12 +279,12 @@ Devices **connect directly to each other**, with no central server: no phone num
 | **Multiple devices** | One account on your phone, tablet and computer; history, settings and stickers kept in sync |
 | **Bots** | Create bots in **Bot Studio**, run them in Python or JavaScript, add them to groups |
 | **Hard networks** | Photos and small files still arrive when two devices can't connect directly (mobile data, strict NATs); calls go through a two-hop circuit relayed by volunteers — each sees only one end |
-| **Security** | End-to-end encryption (Double Ratchet), encrypted storage, PIN app lock, recovery with a 24-word phrase, friends help restore your history |
+| **Security** | Double Ratchet for 1–1 messages, SQLCipher database, PIN lock, 24-word recovery; downloaded/exported files are outside database encryption |
 
 ### Download
 
 Every file is on the **[Releases](https://github.com/hoangtuvungcao/get_lumora/releases/latest)** page
-(`…` is the version, e.g. `v1.0.9`).
+(`…` is the version, e.g. `v1.0.10`).
 
 | Device | Requirements | Recommended file |
 |---|---|---|
@@ -287,7 +295,8 @@ Every file is on the **[Releases](https://github.com/hoangtuvungcao/get_lumora/r
 | **iPhone / iPad** | iOS 14 or later | `Lumora-…-ios-unsigned.ipa` — sideload (see below) |
 | **Running bots** | Windows / macOS / Linux | `Lumora-bot-runner-…` (see [For bot developers](#for-bot-developers)) |
 
-To update, download the new version and install it over the old one. **Your data is kept.**
+Current release: **v1.0.10**, published **9 November 2026**, with **18 assets**. Website updates do not rebuild the app.
+Back up data and check signatures/release notes before updating; do not uninstall without a backup.
 
 ### Installation
 
@@ -346,23 +355,25 @@ Full guide: [getlumora.pages.dev](https://getlumora.pages.dev).
 
 ### How Lumora works
 
-Lumora is a **peer-to-peer** network: messages, calls and files go straight between devices, end-to-end encrypted.
+Lumora prefers **peer-to-peer** networking, with encrypted content connections, relays and offline mail when needed.
 Lumora looks for a path in this order:
 
 1. **The same local network** (home or office Wi-Fi) — fastest.
 2. **Directly over the Internet** — IPv6, or NAT hole punching on IPv4.
 3. **A mutual friend as a bridge** when the two devices can't connect directly ("Help friends connect").
 4. **A two-hop circuit through volunteers** ("Help the Lumora network", on by default on computers): encrypted data passes
-   two devices, each sees only one end and never who talks to whom.
+   two devices, limiting per-hop visibility but not promising anonymity against metadata, collusion or compromised devices.
 5. **The encrypted mailbox** when nothing else works: messages, photos and files up to 8 MB still arrive, a little slower.
 
-No Lumora server keeps your messages or your contacts.
+Primary history lives on devices. Friends, relays and Nostr can retain offline-mail ciphertext.
+This is not a no-server-storage promise. Relays see metadata; some Nostr relays can link ID–IP while ID discovery is enabled.
 
 ### Privacy and security
 
 - No server account, no phone number, no email address.
-- Messages, calls and files are end-to-end encrypted; data on your device is encrypted too.
-- **Strangers never learn your network (IP) address** — only friends and your own devices connect directly.
+- One-to-one messages use Double Ratchet; groups use rotating keys. Recipients and bots can read content sent to them.
+- SQLCipher protects history/contact databases; downloads/exports are normal files outside SQLCipher.
+- Direct peers, bots, permitted group peers and infrastructure can see IPs. Configured relays see identity and IP; complete IP anonymity is not promised.
 - You choose who can call you, who can add you to groups and who sees you online.
 - No ads, and no data collected to sell.
 
@@ -397,7 +408,7 @@ screen, full-screen notifications, autostart).
 <details>
 <summary><b>No messages while the app is closed?</b></summary>
 
-Lumora has no push server, so it needs to run in the background. Allow **Unrestricted battery** and **Autostart**
+Notifications while the app is closed depend on platform, background permissions and push configuration. Allow **Unrestricted battery** and **Autostart**
 (Xiaomi, OPPO, vivo, Huawei…) from the app's guide.
 </details>
 
@@ -456,10 +467,12 @@ and a screenshot if you can. Contact: **trong20843@gmail.com**.
 
 <div align="center">
 
-**Giấy phép · License** — Lumora là phần mềm miễn phí, mã nguồn đóng · Lumora is proprietary freeware:
+**Giấy phép · License** — Ứng dụng/lõi có giấy phép riêng · Lumora app/core are proprietary freeware:
 [LICENSE.md](LICENSE.md) &nbsp;•&nbsp; SDK bot: MIT &nbsp;•&nbsp; Thành phần mã nguồn mở · Open-source components:
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 
-<sub>Kho này chỉ chứa bản cài đặt, không chứa mã nguồn. · This repository holds release binaries only, no source code.</sub>
+<sub>Kho này chứa bản phát hành và mã website; mã ứng dụng/lõi ở kho riêng, có thể tạm hạn chế khi bảo trì. Công khai mã không đồng nghĩa mã nguồn mở. · Releases and website source live here; app/core source is separate and may be restricted during maintenance. Source visibility is not an open-source license.</sub>
+
+**[Website build/deploy documentation](docs/WEBSITE.md)** · **[Issues](https://github.com/hoangtuvungcao/get_lumora/issues)** · **[Discussions](https://github.com/hoangtuvungcao/get_lumora/discussions)**
 
 </div>
